@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="jumbotron">
+        <div class="title">
+            <h1>Simple Pricing!</h1>
+            <p>
+                The most advance customer support tools with a simple and affordable pricing. And you can always try
+                for 30 days, free!
+            </p>
+        </div>
+    </section>
+
+    <section class="pricing">
+        <div id="cardContainer" class="card-container">
+            <div class="card" onclick="myFunction(event)">
+                <div class="card-header">
+                    <h3>Basic</h3>
+                </div>
+                <div class="card-content">
+                    <div class="price-area">
+                        <span class="dollar">$</span>
+                        <span class="price">4<span>/month</span></span>
+                    </div>
+                    <div class="features-area">
+                        <ul>
+                            <li><span>10</span> Projects</li>
+                            <li><span>10</span> Pages</li>
+                            <li><span>100</span> Mb Disk Space</li>
+                        </ul>
+                    </div>
+                    <button onclick="alert('Success')">BUY NOW</button>
+                </div>
+            </div>
+            <div class="card" onclick="myFunction(event)">
+                <div class="card-header">
+                    <h3>Standard</h3>
+                    <p>Save 15%</p>
+                </div>
+                <div class="card-content">
+                    <div class="price-area">
+                        <span class="dollar">$</span>
+                        <span class="price">8<span>/month</span></span>
+                    </div>
+                    <div class="features-area">
+                        <ul>
+                            <li><span>20</span> Projects</li>
+                            <li><span>20</span> Pages</li>
+                            <li><span>200</span> Mb Disk Space</li>
+                        </ul>
+                    </div>
+                    <button onclick="alert('Success')">BUY NOW</button>
+                </div>
+            </div>
+            <div class="card" onclick="myFunction(event)">
+                <div class="card-header">
+                    <h3>Advanced</h3>
+                </div>
+                <div class="card-content">
+                    <div class="price-area">
+                        <span class="dollar">$</span>
+                        <span class="price">12<span>/month</span></span>
+                    </div>
+                    <div class="features-area">
+                        <ul>
+                            <li><span>40</span> Projects</li>
+                            <li><span>40</span>Pages</li>
+                            <li><span>500</span> Mb Disk Space</li>
+                        </ul>
+                    </div>
+                    <button onclick="alert('Success')">BUY NOW</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="container">
+            <h2>Frequently Ask Questions</h2>
+            <div class="row">
+                <div class="col">
+                    <p>How does free trial work?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Curabitur a diam nec augue tincidunt
+                        accumsan. In dignissim laoreet ipsum eu interdum.</p>
+                </div>
+                <div class="col">
+                    <p>Can I cancel anytime?</p>
+                    <p>Aliquam erat volutpat. Etiam lucuts massa ex, at tempus tellus blandit quis. Sed quis neque
+                        tellus. Donec maximus ipsum in malesuada hendrerit</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script>
+    function myFunction(e) {
+        if (document.querySelector('#cardContainer div.card.selected') !== null) {
+            document.querySelector('#cardContainer div.card.selected').classList.remove('selected');
+        }
+        e.currentTarget.classList.toggle("selected");
+    }
+</script>
+
+</html>
